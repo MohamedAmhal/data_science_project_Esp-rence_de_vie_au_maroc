@@ -11,9 +11,17 @@ Ce projet de data mining se concentre sur la prédiction de l'espérance de vie 
 ### Objectifs :
 
    1- Collecte et prétraitement des données : Agréger et nettoyer un large ensemble de données démographiques, économiques et de santé provenant de sources variées.
+
+
    2- Analyse exploratoire des données : Identifier les tendances et les corrélations entre les différents facteurs et l'espérance de vie au Maroc.
+
+
    3- Modélisation prédictive : Développer des modèles prédictifs basés sur l'apprentissage automatique pour estimer l'espérance de vie future en fonction des données disponibles.
+
+
    4- Évaluation et interprétation des résultats : Évaluer les performances des modèles et interpréter les facteurs qui ont le plus d'impact sur l'espérance de vie.
+
+
 
 ### Technologies utilisées :
 
