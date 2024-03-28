@@ -1,5 +1,5 @@
 # Source du jeu de données : 
-**Espérance de vie de l'OMS**, extrait de Kaggle, et permet de prédire l'espérance de vie à l'aide de divers facteurs sur une période de 15 ans.
+[Life Expectancy WHO](https://www.kaggle.com/kumarajarshi/life-expectancy-who), extrait de Kaggle, et permet de prédire l'espérance de vie à l'aide de divers facteurs sur une période de 15 ans.
 
 
 Le dépôt de données de l'Observatoire mondial de la santé (GHO) de l'Organisation mondiale de la santé (OMS) suit l'état de santé ainsi que de nombreux autres facteurs connexes pour tous les pays. Les ensembles de données sont mis à disposition du public dans le but d'analyser les données de santé. Le jeu de données lié à l'espérance de vie et aux facteurs de santé pour 193 pays a été collecté sur le même site Web du dépôt de données de l'OMS, et ses données économiques correspondantes ont été collectées sur le site Web des Nations unies.
