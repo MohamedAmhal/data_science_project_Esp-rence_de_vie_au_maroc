@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Espérence_de_vie_app</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Espérence de vie au maroc 2020-2030</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="Année" placeholder="Année : entre [2020:2030]" required="required" />
+        <input type="text" name="Polio" placeholder="Polio : [3:99](int value !)" required="required" />
+		<input type="text" name="Diphtérie" placeholder="Diphtérie : [2:99]" required="required" />
+        <input type="text" name="VIH/SIDA" placeholder="VIH/SIDA [1,60] (float) : " required="required" />
+        <input type="text" name="PIB" placeholder="PIB [1,120000" required="required" />
+        <input type="text" name="IMC" placeholder="IMC [1,100]" required="required" />
+        <input type="text" name="Scolarité" placeholder="Scolarité [0,20]" required="required" />
+        <input type="text" name="Alcool" placeholder="Alcool [0,20]" required="required" />
+        <input type="text" name="Maigreur_1_19_ans" placeholder="Maigreur_1_19_ans  [0,30]" required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
