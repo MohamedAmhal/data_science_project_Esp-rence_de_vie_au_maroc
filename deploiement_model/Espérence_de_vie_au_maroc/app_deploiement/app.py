@@ -35,13 +35,14 @@ def predict():
             continue
         dicte[j] = [float_features[i]]
         i += 1
+    z = dicte['Année']
     final_features = pd.DataFrame(dicte)
 
     prediction = model.predict(final_features)
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='Votre Espérence de vie est : {}'.format(output))
+    return render_template('index.html', prediction_text="L'espérance de vie estimée pour l'année {} au Maroc est de : {} ans".format(int(z[0]), output))
 
 if __name__ == "__main__":
     app.run(debug=True)
